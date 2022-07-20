@@ -1,0 +1,513 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+/*------------------------------------------commen css----------------------------------------*/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.clearfix{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.btn{
+    border: 1px solid #008fff;
+    background-color: #008fff;
+    color: white;
+}
+.padding{
+    padding: 50px 0;
+}
+#linebreak::after{
+    content: '\a';
+    white-space: pre;
+}
+/*-------------------------------------css for header section-------------------------------------*/
+.menu a{
+    display: inline-block;
+}
+header .logo{
+    float: left;
+}
+header img{
+    max-width: 70px;
+}
+header .menu{
+    float: right;
+}
+.menu>li{
+    display: inline-block;
+}
+.menu li a{
+    padding: 5px 15px;
+    display: inline-block;
+}
+.menu .btn{
+    padding: 5px 35px;
+    border-radius: 6px;
+    border: transparent;
+    font-weight: 900;
+}
+.menu .btn:hover{
+    animation: shakeX;
+    animation-duration: 2s;
+}
+.dropdowncontent{
+    position: absolute;
+    min-width: 120px;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    background-color: white;
+}
+.dropdowncontent li a{
+    float: none;
+    padding: 15px;
+    display: block;
+}
+.dropdowncontent a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdowncontent{
+    display: block;
+}
+/*--------------------------------------------css for banner section------------------------------*/
+.banner{
+    position: relative;
+}
+.item{
+    position: relative;
+}
+.item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .5;
+}
+#slider1 .owl-nav{
+    display: none;
+}
+#slider1 .owl-dots{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+}
+#slider1 .owl-dot.active span{
+    background-color: #008fff;
+}
+#slider1 .owl-dot span{
+    background-color: transparent;
+    border: 1px solid #008fff;
+}
+.bannercontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    color: white; 
+}
+.bannercontent h1{
+    font-size: 40px;
+}
+.bannercontent p{
+    margin: 40px 0;
+}
+.bannercontent a{
+    padding: 10px 20px;
+    display: inline-block;
+}
+.bannercontent a:hover{
+    animation: shakeY;
+    animation-duration: 2s;
+}
+.heading{
+    font-size: 30px;
+}
+/*--------------------------------css for card section------------------------------------------*/
+.card{
+    position: relative;
+    top: -100px;
+    z-index: 1;
+}
+.maincard{
+    background-color: lightgray;
+    padding-bottom: 40px;
+}
+.card .fourcard{
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+}
+.fourcard1 img{
+    min-width: 70px;
+}
+.fourcard .fourcard1{
+    text-align: center;
+    padding: 50px 0;
+    border: 1px solid lightgray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    background-color: lightgray;
+    border-radius: 6px;
+}
+.fourcard1 h3{
+    margin: 15px 0;
+}
+.fourcard1:hover{
+    transform: scale(1.1);
+    transition: 0.8s all ease-in-out;
+}
+.maincard .improvement{
+    text-align: center;   
+    margin-bottom: 40px;
+}
+.maincard .iconwidth{
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+    margin: 20px 0;
+}
+.iconwidth .iconimage{
+    float: left;
+    width: 15%;
+}
+.iconimage img{
+    width: 100%;
+}
+.iconwidth .iconcontent{
+    float: left;
+    width: 85%;
+    padding: 0 15px;
+}
+/*--------------------------------------css for about us section----------------------------------*/
+.aboutus .aboutcontent{
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+.aboutimage{
+    position: relative;
+}
+.aboutimage img{
+    width: 100%;
+}
+.aboutimage a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #008fff;
+    color: white;
+    background-color: #008fff;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+.leftaboutcontent p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.leftaboutcontent i{
+    color: #008fff;
+}
+.leftaboutcontent li{
+    margin: 10px 0;
+    font-weight: 900;
+}
+/*-----------------------------------------------css for call section------------------------------*/
+.call{
+    position: relative;
+    color: white; 
+    text-align: center;
+}
+.callimage{
+    background-image: linear-gradient(rgba(0,143,255,0.6),rgba(0,143,255,0.6)),url(../images/callsectionimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.call .callcontent{
+    padding: 70px 0;
+}
+.callcontent h2{
+    font-size: 35px;
+}
+.callcontent a{
+    color: white;
+}
+.callcontent aside{
+    display: block;
+    margin: 25px 0;
+}
+.callbtn{
+    display: table;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    background-color: white;
+    color: blue!important;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+.callbtn:hover{
+    animation: flip;
+    animation-duration: 2s;
+}
+.callbtn i{
+    margin-right: 10px;
+}
+/*-----------------------------------------------css for price section--------------------------------*/
+.price{
+    text-align: center;
+}
+.priceheading p{
+    margin: 25px 0 50px 0;
+}
+.price .pricecard{
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+}
+.pricecard:hover{
+    transform: scale(1.1);
+    transition: 0.5s all ease-in-out;
+}
+.pricecard .pricecard1{
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+.pricecard1 .plan{
+    padding: 25px 0;
+}
+.plan h4{
+    font-size: 22px;
+}
+.plan span{
+    display: block;
+    margin: 5px 0 15px 0;
+    font-size: 20px;
+}
+.plan aside{
+    color: #008fff;
+    font-size: 40px;
+    font-weight: 900;
+}
+.plan sup{
+    font-size: 35px;
+}
+.plan sub{
+    color: black;
+    font-weight: 400;
+    font-size: 25px;
+}
+.pricecard1 .features{
+    padding: 25px 0;
+    background-color: lightgray;
+}
+.features li{
+    margin: 10px 0;
+}
+.pricecard1 .buynow{
+    padding: 25px 0 50px 0;
+}
+.buynow a{
+    display: table;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.buynow a:hover{
+    animation: heartBeat;
+    animation-duration: 2s;
+}
+.buynow a i{
+    margin-right: 5px;
+}
+/*-----------------------------------------css for corporate section-----------------------------------*/
+.corporate{
+    position: relative;
+}
+.corporateimage{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/corporateimage.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.corporateheading{
+    text-align: center;
+    padding: 20px 0 50px 0;
+}
+.corporateheading h2{
+    font-size: 40px;
+    color: white;
+}
+.corporateheading aside{
+    color: #008fff;
+}
+
+.corporatewidth{
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+.corporatecontent{
+    padding-bottom: 50px;
+}
+.corporateleftcontent img{
+    width: 100%;
+    background-color: white;
+}
+.corporaterightcontent p{
+    color: white;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.corporaterightcontent a{
+    display: table;
+    padding: 5px 25px;
+    border-radius: 4px;
+}
+.corporaterightcontent a:hover{
+    animation: tada;
+    animation-duration: 2s;
+}
+/*-------------------------------------------css for team section-----------------------------------*/
+.teamheading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.teamheading aside{
+    margin-top: 20px;
+}
+.teamwidth{
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+    text-align: center;
+}
+.teamimages img{
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    display: block;
+    margin: 0 auto;
+
+}
+.teamimages strong{
+    font-size: 26px;
+    padding-top: 25px;
+    display: block;
+    margin: 0 auto;
+}
+.teamimages aside{
+    font-size: 20px;
+    color: #008fff;
+}
+/*--------------------------------------css for testimonial section-------------------------------- */
+.testimonial{
+    background-color: lightgray;
+}
+.testimonial h3{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.testimonial strong{
+    display: block;
+}
+.testimonialwidth{
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+}
+.testimonialcontent{
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+.testimonialcontent span{
+    margin-bottom: 15px;
+    display: block;
+}
+.testimonialcontent aside{
+    margin-top: 10px;
+    color: #008fff;
+}
+/*----------------------------------------------css for footer section-------------------------------*/
+footer{
+    position: relative;
+}
+.footerimage{
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,0.6)),url(../images/footerimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.footerheading{
+    text-align: center;
+    padding: 50px 0;
+}
+.footerheading h2{
+    color: white;
+    font-size: 40px;
+}
+.footerheading aside{
+    color: #008fff;
+}
+.footercontent{
+    padding-bottom: 50px;
+}
+.footerwidth{
+    width: 33.33%;
+    float: left;
+    padding: 0 15px;
+    text-align: center;
+    color: white;
+}
+.footerwidth strong{
+    display: block;
+}
+.footerwidth a{
+    display: block;
+}
+.footercontent i{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #008fff;
+    border-radius: 50%;
+    padding-top: 20px;
+    font-size: 25px;
+    color: #008fff;
+    margin-bottom: 30px;
+}
+.footercontent a{
+    color: white;
+}
+.copyright{
+    float: left;
+}
+.copyright span{
+    color: #008fff;
+}
+.social-icons{
+    float: right;
+    font-size: 20px;
+}
+.social-icons a{
+    color: gray;
+    padding: 0 10px;
+}
+.footerlastline{
+    margin-top: 10px;
+}
+.social-icons a:hover{
+    color: red;
+}

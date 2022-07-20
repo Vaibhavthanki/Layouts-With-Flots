@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*---------------------------------------------------commen css------------------------------------*/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.clearfix{
+    clear: both;
+}
+/* .clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+} */
+.padding{
+    padding: 50px 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.heading{
+    font-size: 16px;
+    color: blue;
+    letter-spacing: 5px;
+}
+.mainheading{
+    font-size: 30px;
+    margin: 0;
+}
+.commenwidth{
+    width: 50%;
+}
+/*------------------------------------css for header section--------------------------------------*/
+header{
+    background-color: black;
+}
+header a{
+    color: white;
+}
+header li a:hover{
+    color: black;
+    background-color: rgb(24, 177, 204);
+    transition: 0.5s;
+}
+header .menu{
+    float: left;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+    display: inline-block;
+    padding: 20px;
+}
+header .socialmedia{
+    float: right;
+}
+.socialmedia li{
+    display: inline-block;
+}
+.socialmedia li a{
+    display: inline-block;
+    padding: 20px;
+    font-size: 19px;
+}
+/*----------------------------------css for backgroundimage---------------------------------------*/
+.backgroundimage img{
+    width: 100%;
+}
+#slider{
+    position: relative;
+}
+#slider .owl-nav{
+    display: none;
+}
+#slider .owl-dots{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-90%);
+}
+#slider .owl-dot.active span{
+    background-color: #20a997;
+} 
+.backgroundimage .imagecontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.imagecontent span{
+    letter-spacing: 5px;
+}
+.imagecontent h2{
+    font-size: 40px;
+    margin: 5px 0 10px 0;
+}
+.imagecontent p{
+    line-height: 30px;
+}
+.imagecontent a{
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #20a997;
+    border-radius: 4px;
+    background-color: #20a997;
+    margin-bottom: 20px;
+}
+.imagecontent a:hover{
+    transform: scale(1.1);
+    transition: .5s;
+} 
+.imagecontent a i{
+    margin-left: 10px;
+}
+/*-------------------------------------css for first section--------------------------------------*/
+.first .benefits{
+    float: left;
+}
+.benefits p{
+    line-height: 30px;
+    text-align: justify;
+}
+/*------------------------------------css for second section--------------------------------------*/
+.second .secondpart .mail{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 0 55px;
+    line-height: 30px;
+}
+.mail i{
+    font-size: 40px;
+    color: #a1ce55;
+}
+.mail h3{
+    margin: 25px 0 10px 0;
+    font-size: 20px;
+}
+.mailbottommargin{
+    margin-bottom: 55px;
+}
+/*-----------------------------------css for third section---------------------------------------*/
+.oneimageleftcontent{
+    float: left;
+    position: relative;
+}
+.oneimage{
+    float: right;
+}
+.oneimageleftcontent .rightimagecontent{
+    padding: 275px 20px 275px 0;
+}
+.rightimagecontent h2{
+    width: 50%;
+    margin: 5px 0 10px 0;
+}
+.rightimagecontent p{
+    text-align: justify;
+    line-height: 28px;
+}
+/*------------------------------css for fourth section-------------------------------------------*/
+.subpart1,.subpart2,.subpart3{
+    padding-bottom: 30px;
+    margin: 0 -15px;
+}
+.subpart1 .image11, .subpart2 .image22, .subpart2 .image33, .subpart3 .image33{
+    position: relative;
+}
+.subpart1 .image1, .subpart3 .image1{
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+}
+.image11 img{
+    display: block;
+}
+.image22 img{
+    display: block;
+}
+.image33 img{
+    display: block;
+}
+.subpart2 .image2{
+    float: left;
+    width: 66.66%;
+    padding: 0 15px;
+}
+.subpart2 .image3{
+    float: left;
+    width: 33.33%;  
+    padding: 0 15px;
+}
+.image11 .overly1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: darkcyan;
+    display: none;
+}
+.overly1 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+    line-height: 28px;
+}
+.image11:hover .overly1{
+    display: block;
+}
+.image22 .overly2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(216, 200, 55);;
+    display: none;
+}
+.overly2 .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+    line-height: 28px;
+}
+.image22:hover .overly2{
+    display: block;
+}
+.image33 .overly2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(216, 200, 55);;
+    display: none;
+    margin: 0 15px;
+}
+.overly2 .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+    line-height: 28px;
+}
+.image3:hover .overly2{
+    display: block;
+}
+.text a{
+    display: table;
+    margin-top: 15px;
+}
+.text a:hover{
+    color: white;
+}
+.text a i{
+    margin-left: 10px;
+}
+.image33 .overly4{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(140, 240, 148);
+    display: none;
+}
+.image33:hover .overly4{
+    display: block;
+}
+
+.overly4 .text1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text1 i{
+    font-size: 40px;
+
+}
+.text1 h3{
+    margin: 10px 0;
+}
+/*------------------------------------css for fifth section------------------------------------*/
+.fifth .desc{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.desc p{
+    margin-bottom: 15px;
+}
+#slider1{
+    position: relative;
+}
+#slider1 .owl-dots{
+    display: none;
+}
+#slider1 .owl-next{
+    display: none;
+}
+#slider1 .owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    z-index: 1;
+}
+#slider1 .owl-prev{
+    background: transparent!important;
+}
+#slider1 .owl-prev span{
+    font-size: 75px;
+    color: blue;
+}
+/*----------------------------------------css for sixth section----------------------------------*/
+
+
+.lorem{
+    text-align: center;
+}
+.lorem i{
+    font-size: 40px;
+    color: blue;
+    margin-bottom: 15px;
+}
+.lorem p{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    word-spacing: 8px;
+    margin-bottom: 30px;
+}
+.lorem h3{
+    margin-bottom: 20px;
+}
+.lorem span{
+    color: rgb(130, 224, 21);
+}
+#slider2 .owl-nav{
+    display: none;
+}
+#slider2 .owl-dot.active span{
+    background-color: #20a997;
+}
+#slider2 .owl-dots{
+    margin-top: 30px;
+}
+/*---------------------------------------css for seventh section----------------------------------*/
+.leftimage{
+    float: left;
+}
+.rightcontent{
+    float: left;
+}
+
+.rightcontent{
+    padding: 30px;
+}
+.rightcontent h2{
+    padding: 15px 30px;
+}
+.rightcontent li i{
+    color: blue;
+    margin-right: 10px;
+}
+
+.rightcontent ul li{
+    padding: 15px 30px;
+}
+
+.rightcontent p{
+    padding: 0px 30px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.rightcontent a{
+    text-decoration: none;
+    margin-left: 30px;
+    border: 1px solid black;
+    padding: 10px 25px;
+    border-radius: 4px;
+    background-color: rgb(25, 179, 179);
+    color: white;
+    display: table;
+}
+.rightcontent a i{
+    margin-left: 20px;
+}
+.rightcontent a:hover{
+    color: red;
+    transform: scale(1.1);
+    transition: 0.5s all ease-in-out;
+}
+/* -------------------------------------css for eigth section------------------------------------------ */
+.eighthpart {
+    text-align: center;
+    margin-top: 20px;
+}
+.imagegallery{
+    margin-top: 40px;
+}
+.imagegallery .gallery3{
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    position: relative;
+}
+.gallery3 img{
+    width: 100%;
+    display: block;
+}
+.gallery3 .overly3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: teal;
+    display: none;
+}
+.overly3 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.gallery3:hover .overly3{
+    display: block;
+}
+/*-----------------------------------------css for footer section----------------------------------*/
+footer{
+    background-color: black;
+    margin-top: 80px;
+    color: white;
+}
+.lastsection{
+    padding: 50px;
+}
+.lastsection .basic,.about,.quicklinks{
+    float: left;
+    width: 33.33%;
+}
+.basic h2{
+    margin-bottom: 20px;
+}
+
+.basic p{
+    padding: 0 20px 0 0;
+    margin-bottom: 10px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.basic a{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+.basic .fb{
+    background-color: rgb(122, 226, 36);
+}
+.basic .insta{
+    background-color: rgb(17, 190, 162);
+}
+.basic .twitter{
+    background-color: wheat;
+}
+footer form{
+    margin-bottom: 20px;
+}
+footer form input{
+    float: left;
+    margin-top: 10px;
+    padding: 15px 25px;
+    border: 1px solid white; 
+    background: transparent;
+    width: 80%;
+    border-right: none;
+    color: white;
+}
+footer form button{
+    float: left;
+    margin-top: 10px;
+    padding: 15px 25px 15px 0;
+    border: 1px solid white;
+    background: transparent;
+    border-left: none;
+    color: white;
+}
+footer form input::placeholder{
+    color: white;
+}
+.about{
+    padding-left: 90px;
+}
+.about h2{
+    margin-bottom: 20px;
+}
+.about p{
+    width: 90%;
+    margin-bottom: 40px;
+}
+.about address{
+    width: 85%;
+    line-height: 28px;
+}
+.about address i{
+    margin-right: 10px;
+}
+.quicklinks{
+    padding-left: 10px;
+}
+.quicklinks h2{
+    margin-bottom: 20px;
+}
+.quicklinks ul{
+    list-style: none;
+}
+
+.quicklinks ul li{
+    margin: 15px 0px;
+}
+.quicklinks a{
+    color: white;
+}
+.quicklinks a i{
+    margin-right: 15px;
+}
+.quicklinks a:hover{
+    color: red;
+    transform: scale(1.1);
+    display: table;
+}
+.phone{
+    margin-top: 20px;
+    font-size: 16px;
+}
+.phone i,.gmail i{
+    margin-right: 10px;
+}
